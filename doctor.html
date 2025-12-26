@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>🏥 Hospital Portal</h2>
+    <button class="logout" onclick="location.href='doctor-profile.html'">
+    Profile
+</button>
+
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+    <h1>Doctor Dashboard</h1>
+
+    <div class="card">
+        <h3>All Appointments</h3>
+
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Patient Name</th>
+                    <th>Age</th>
+                    <th>Doctor</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody id="doctorAppointments">
+                <!-- JS will insert rows here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="Script.js"></script>
+</body>
+</html>
